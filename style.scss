@@ -94,7 +94,6 @@ h1 {
         justify-content: space-between;
         margin-bottom: 2rem;
         min-width: clamp(convert(330), 51vw, convert(688));
-        // width: convert(688);
     }
 
     &__parent {
@@ -195,8 +194,9 @@ h1 {
 
 footer {
     align-self: flex-end;
-    padding-bottom: convert(40);
+    padding: 1rem 0 convert(40);
 }
+
 .socialmedia {
     align-self: flex-end;
     display: flex;
