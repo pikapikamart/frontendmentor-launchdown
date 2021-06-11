@@ -196,7 +196,6 @@ footer {
     align-self: flex-end;
     padding: 1rem 0 convert(40);
 }
-
 .socialmedia {
     align-self: flex-end;
     display: flex;
@@ -238,3 +237,18 @@ footer {
 }
 
 // Media 
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+        transition: none;
+    }
+}
